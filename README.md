@@ -42,18 +42,16 @@ bashnpm run cy:run:smoke
 npm run cy:run:regression
 
 📁 Project Structure
-cypress/
-├── e2e or Integration/
-│   ├── smoke/           # Smoke test suite
-│   ├── regression/      # Regression test suite
-│   └── api/            # API test suite
-├── fixtures/           # Test data files
-├── support/
-│   ├── commands.js     # Custom Cypress commands
-│   ├── e2e.js         # Global configuration
-│   └── page-objects/   # Page Object Model classes
-├── plugins/           # Cypress plugins
-└── screenshots/       # Test failure screenshots
+├── cypress/
+│ ├── e2e or Integration/ # Test cases
+│ ├── pages/ # Page Object classes
+│ ├── fixtures/ # Test data (JSON)
+│ ├── support/ # Commands and setup files
+│
+├── cypress.config.js # Cypress global config
+├── cypress.env.json # Env-specific config
+├── package.json # NPM dependencies
+└── README.md # Project documentation
 
 🎯 Test Categories
 ✅Smoke Tests
