@@ -1,7 +1,7 @@
-🚀 Project Overview
+🚀 Project Overview:
 This project demonstrates automated E2E testing using Cypress, featuring best practices for test automation, page object model implementation, and comprehensive reporting. It's designed as a learning resource for QA engineers and developers looking to implement robust testing frameworks.
-📋 Features
 
+📋 Features:
 -Modern Cypress Framework: Built with the latest Cypress version
 -Page Object Model (POM): Maintainable and scalable test architecture
 -Custom Commands: Reusable Cypress commands for common operations
@@ -11,14 +11,13 @@ This project demonstrates automated E2E testing using Cypress, featuring best pr
 -CI/CD Ready: GitHub Actions workflow configuration
 
 
-🛠️ Prerequisites
+🛠️ Prerequisites:
 Before running this project, ensure you have the following installed:
 -Node.js (v14 or higher)
 -npm or yarn
 -Git
 
 📦 Installation
-
 Clone the repository:
 bashgit clone https://github.com/codenbox/Cypress_Demo_E2E_Latest.git
 cd Cypress_Demo_E2E_Latest
@@ -26,19 +25,19 @@ cd Cypress_Demo_E2E_Latest
 Install dependencies:
 bashnpm install
 
-🏃‍♂️ Running Tests
-Interactive Mode (Cypress Test Runner)
+🏃‍♂️ Running Tests:
+➤ Interactive Mode (Cypress Test Runner)
 bashnpm run cy:open
 
-Headless Mode
+➤ Headless Mode
 bashnpm run cy:run
 
-Run Tests in Specific Browser
+➤ Run Tests in Specific Browser
 bashnpm run cy:run:chrome
 npm run cy:run:firefox
 npm run cy:run:edge
 
-Run Tests with Tags
+➤ Run Tests with Tags
 bashnpm run cy:run:smoke
 npm run cy:run:regression
 
