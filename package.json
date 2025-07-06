@@ -1,0 +1,42 @@
+{
+  "name": "cypress_example",
+  "version": "1.0.0",
+  "description": "cypress demo project",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:headless": "cypress run --headless",
+    "cy:run:headed": "cypress run --headed",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "cy:run:edge": "cypress run --browser edge",
+    "cy:run:e2eTest": "npx cypress run --spec cypress/integration/examples/e2eTest.cy.js --headed --browser electron",
+    "cy:run_dashboard": "npx cypress run --record --key 2adc6bed-39d9-4ba0-bec6-b821e03879fe",
+    "cy:run_e2e_dashboard": "npx cypress run --record --key 2adc6bed-39d9-4ba0-bec6-b821e03879fe  --spec cypress/integration/examples/e2eTest.cy.js --headed --browser chrome",
+    "clean:report": "rimraf cypress/reports/mochawesome-report",
+    "cy:run:clean": "npm run clean:report && npm run cy:run:e2eTest",
+    "test:bdd": "cypress run",
+    "generate:report": "node generate-report.js --generate",
+    "test:bdd:report": "npm run test:bdd && npm run generate:report"
+
+  },
+  "keywords": [
+    "cyress",
+    "cucumber"
+  ],
+  "author": "sariful",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress": "^14.3.3",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "multiple-cucumber-html-reporter": "^3.9.2",
+    "rimraf": "^6.0.1"
+  },
+  "dependencies": {
+    "cypress-downloadfile": "^1.2.4"
+  }
+}
